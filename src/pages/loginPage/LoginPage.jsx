@@ -1,10 +1,10 @@
-import DocumentTitle from '../../components/DocumentTitle';
+// import DocumentTitle from '../../components/DocumentTitle';
 import { LoginForm } from '../../components/loginForm/LoginForm';
 
 export default function LoginPage() {
   return (
     <div>
-      <DocumentTitle>Login</DocumentTitle>
+      {/* <DocumentTitle>Login</DocumentTitle> */}
       <LoginForm />
     </div>
   );

@@ -7,3 +7,14 @@
     flex-direction: column;
     margin-bottom: 16px;
   }
+
+  .input {
+    width: 100%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+
+.btn {
+  background-color: blue;
+}
