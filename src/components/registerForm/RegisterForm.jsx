@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { register } from '../../redux/auth/operation';
+import { register } from '../../redux/auth/operations';
 import css from './RegisterForm.module.css';
 
 export const RegisterForm = () => {
