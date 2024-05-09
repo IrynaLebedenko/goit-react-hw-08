@@ -1,0 +1,16 @@
+
+.contactInput {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }
+    
+    .btn {
+        background-color: rgb(130, 134, 130);
+        border: 1px solid black;
+        font-size: 14px;
+    }
+    
+    .btn:hover{
+        border: 2px solid black;
+        background-color: rgb(126, 136, 245);
+    }

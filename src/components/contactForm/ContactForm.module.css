@@ -1,0 +1,37 @@
+.formItem{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.formField{
+border: 1px solid black;
+border-radius: 5px;
+background-color: rgb(236, 240, 240);
+color: black;
+font-size: 16px;
+margin-bottom: 10px;
+padding: 4px;
+padding-left: 8px;
+width: 350px;
+}
+.addButton{
+    font-size: 14px;
+    font-weight: 500;
+    background-color: rgb(130, 134, 130);
+    border: 1px solid black;
+}
+.addButton:hover{
+    background-color:rgb(126, 136, 245);
+    border: 2px solid black;
+   
+    };
+ .formItem > .errorMessage{
+    font-size: 5px;
+    color: rgb(15, 15, 15);
+}
+
+.errorMessage {
+    color: brown;
+  
+}
