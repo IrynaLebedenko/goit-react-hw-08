@@ -10,6 +10,7 @@ import { Route, Routes } from 'react-router-dom';
 import { refreshUser } from '../../redux/auth/operation';
 import { selectIsRefreshing } from '../../redux/auth/selectors';
 
+
 const HomePage = lazy(() => import('../../pages/homePage/HomePage'));
 const RegisterPage = lazy(() => import('../../pages/registerPage/RegisterPage'));
 const LoginPage = lazy(() => import('../../pages/loginPage/LoginPage'));
@@ -17,12 +18,9 @@ const ContactsPage = lazy(() => import('../../pages/contactsPage/ContactsPage'))
 
 
 
-
 const App = () => {
 const dispatch = useDispatch();
-const { isRefreshing } = useSelector(selectIsRefreshing);
-  // const isLoading = useSelector(selectIsLoading);
-  // const error = useSelector(selectError);
+const isRefreshing = useSelector(selectIsRefreshing);
 
   useEffect(() => {
     dispatch(refreshUser());
