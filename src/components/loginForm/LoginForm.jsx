@@ -1,9 +1,12 @@
 import { useDispatch } from 'react-redux';
 import { logIn } from '../../redux/auth/operation';
 import css from './LoginForm.module.css';
+// import { useHistory } from 'react-router-dom';
+
 
 export const LoginForm = () => {
   const dispatch = useDispatch();
+  // const history = useHistory(); 
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -18,6 +21,7 @@ export const LoginForm = () => {
       .unwrap()
       .then(() => {
         console.log('login success');
+        // history.push('/project-page');
       })
       .catch(() => {
         console.log('login error');
