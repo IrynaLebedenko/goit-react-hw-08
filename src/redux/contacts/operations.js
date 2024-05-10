@@ -40,3 +40,20 @@ export const deleteContact = createAsyncThunk(
     }
   }
 );
+
+
+export const logOut = createAsyncThunk(
+  "auth/logOut",
+  async (_, thunkAPI) => {
+    try {
+      const response = await axios.post("/logout");
+         if (response.status === 200) {
+           return "Logged out successfully";
+         } else {
+           return thunkAPI.rejectWithValue("Logout failed");
+      }
+    } catch (error) {
+        return thunkAPI.rejectWithValue(error.message);
+    }
+  }
+);
